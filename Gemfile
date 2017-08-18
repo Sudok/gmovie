@@ -34,8 +34,6 @@ gem 'cancancan', '~> 2.0'
 gem 'materialize-sass'
 gem 'carrierwave', '~> 1.1'
 gem 'material_icons'
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'bootstrap_sb_admin_base_v2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
