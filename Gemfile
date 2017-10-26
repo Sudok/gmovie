@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise', '~> 4.2'
 gem 'cancancan', '~> 2.0'
+gem 'bootstrap_sb_admin_base_v2'
 gem 'materialize-sass'
 gem 'carrierwave', '~> 1.1'
 gem 'material_icons'
