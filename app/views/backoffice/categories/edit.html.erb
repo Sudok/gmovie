@@ -10,6 +10,17 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
+                  <div class="col-lg-6">
+                    <!-- Rails interaction -->
+                    <%= form_for([:backoffice, @category]) do |f| %>
+                      <div class="form-group">
+                        <label>Descrição</label>
+                        <%= f.text_field :description, class:"form-control", placeholder:"Ação/Romance" %>
+                      </div>
+                      <button type="submit" class="btn btn-default">Salvar</button>
+                    <% end %>
+                    <!-- Rails interaction end -->
+                  </div>
                 </div>
                 <!-- /.panel-body -->
             </div>
