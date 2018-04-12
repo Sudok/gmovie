@@ -11,7 +11,7 @@
   </div>
   <!-- /.navbar-header -->
   <ul class="nav navbar-top-links navbar-right">
-	
+
 	<!-- /.dropdown -->
 	<li class="dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -25,9 +25,9 @@
 						<li class="divider"></li>
 			<li>
 							<%= link_to destroy_admin_session_path, method: :delete do %>
-							<i class="fa fa-sign-out fa-fw"></i> 
+							<i class="fa fa-sign-out fa-fw"></i>
 							Sair
-							<% end %> 
+							<% end %>
 			</li>
 		</ul>
 		<!-- /.dropdown-user -->
@@ -48,7 +48,12 @@
 						<i class="fa fa-th-list fa-fw"></i> Categorias
 					<% end %>
 			  </li>
-			  
+				<li>
+					<%= link_to backoffice_admins_index_path do %>
+						<i class="fa fa-users fa-fw"></i> Administradores
+					<% end %>
+			  </li>
+
 		  </ul>
 	  </div>
 	  <!-- /.sidebar-collapse -->
