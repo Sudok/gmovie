@@ -35,9 +35,13 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'materialize-sass'
 gem 'carrierwave', '~> 1.1'
 gem 'material_icons'
-gem 'faker'
-# NotifyJS
-gem 'rails-assets-notify', source: 'https://rails-assets.org'
+
+source 'https://rails-assets.org' do
+  # NotifyJS
+  gem 'rails-assets-notify'
+  # BootboxJS
+  gem 'rails-assets-bootbox'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,6 +49,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'faker'
   gem 'better_errors', '~> 2.3'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
