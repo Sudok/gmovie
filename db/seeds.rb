@@ -9,13 +9,13 @@
 puts "****************************************"
 puts "Cadastrando as Categorias..."
 categories = [
-              "Ação" ,
-              "Drama" ,
-              "Comédia" ,
-              "Terror" ,
-              "Romance" ,
-              "Aventura" ,
-            ]
+  "Ação" ,
+  "Drama" ,
+  "Comédia" ,
+  "Terror" ,
+  "Romance" ,
+  "Aventura" ,
+]
 
 categories.each do |category|
   Category.find_or_create_by(description: category)
@@ -33,7 +33,8 @@ Admin.create!(
   name: "Glauber Reis",
   email: "admin@admin.com",
   password: "123456",
-  password_confirmation: "123456"
+  password_confirmation: "123456",
+  role: 0
 )
 
 puts "****************************************"
