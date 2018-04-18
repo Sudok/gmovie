@@ -132,7 +132,7 @@ GEM
     rails-assets-bootbox (4.4.0)
       rails-assets-bootstrap (>= 3.0.0)
     rails-assets-bootstrap (4.0.0)
-    rails-assets-notify (0.0.1)
+    rails-assets-notifyjs (0.4.2)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -217,7 +217,7 @@ DEPENDENCIES
   pundit
   rails (~> 5.0.4)
   rails-assets-bootbox!
-  rails-assets-notify!
+  rails-assets-notifyjs!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

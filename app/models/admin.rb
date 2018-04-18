@@ -1,21 +1,24 @@
 class Admin < ApplicationRecord
-  enum role: {:full_access => 0 , :restricted_access => 1}
+  ROLES = {:full_access => 0 , :restricted_access => 1}
+  #enum role: {:full_access => 0 , :restricted_access => 1}
+  
+  enum role: ROLES
   
   # Scopes
-  scope :with_full_access, -> { where(role: 0)}
-  scope :with_restricted_access, -> { where(role: 1)}
+  scope :with_full_access, -> { where(role: ROLES[:full_access])}
+  scope :with_restricted_access, -> { where(role: ROLES[:restricted_access])}
   
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def role_description
-    if self.role == 'full_access'
-      'Acesso Completo'
-    else
-      "Acesso Restrito"
-    end
-  end
+  # def role_description
+  #   if self.role == 'full_access'
+  #     'Acesso Completo'
+  #   else
+  #     "Acesso Restrito"
+  #   end
+  # end
 
 end
