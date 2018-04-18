@@ -35,6 +35,7 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'materialize-sass'
 gem 'carrierwave', '~> 1.1'
 gem 'material_icons'
+gem 'pundit'
 
 source 'https://rails-assets.org' do
   # NotifyJS

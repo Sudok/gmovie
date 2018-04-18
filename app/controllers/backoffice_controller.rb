@@ -3,4 +3,8 @@ class BackofficeController < ApplicationController
   #Loading dashboard layout
   layout "backoffice"
 
+  # Change current_user to pundit
+  def pundit_user
+    current_admin 
+  end
 end
