@@ -39,7 +39,7 @@ gem 'pundit'
 
 source 'https://rails-assets.org' do
   # NotifyJS
-  gem 'rails-assets-notify'
+  gem 'rails-assets-notifyjs'
   # BootboxJS
   gem 'rails-assets-bootbox'
 end
