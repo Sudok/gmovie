@@ -71,6 +71,8 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     erubi (1.6.1)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -207,6 +209,7 @@ DEPENDENCIES
   carrierwave (~> 1.1)
   coffee-rails (~> 4.2)
   devise (~> 4.2)
+  enum_help
   faker
   jbuilder (~> 2.5)
   jquery-rails

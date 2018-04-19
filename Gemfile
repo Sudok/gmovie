@@ -36,6 +36,7 @@ gem 'materialize-sass'
 gem 'carrierwave', '~> 1.1'
 gem 'material_icons'
 gem 'pundit'
+gem 'enum_help'
 
 source 'https://rails-assets.org' do
   # NotifyJS

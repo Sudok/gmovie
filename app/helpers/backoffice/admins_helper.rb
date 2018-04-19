@@ -4,7 +4,7 @@ module Backoffice::AdminsHelper
   def options_for_roles
     options = []
 
-    Admin.roles.each do |key, value|
+    Admin.roles_i18n.each do |key, value|
       options.push(OptionsForRoles.new(key, value))
     end
     
